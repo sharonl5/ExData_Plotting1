@@ -1,5 +1,5 @@
 # Plot 1. Data set should be in workdir with scripts.
-setwd("C:/Users/sharon.liu/Documents/R/course 4/")
+setwd("./Documents/R/course 4/")
 outdir<- getwd()
 
 zipF<- "./exdata_data_household_power_consumption.zip"

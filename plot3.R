@@ -8,7 +8,7 @@ dsn <- read.table("household_power_consumption.txt", header=TRUE, sep=";", strin
 subSetDsn <- subset(dsn, dsn$Date %in% c("1/2/2007","2/2/2007"))
 
 datetime <- strptime(paste(subSetDsn$Date, subSetDsn$Time), format="%d/%m/%Y %H:%M:%S") 
-globalActivePower <- as.numeric(subSetDsn$Global_active_power)
+
 subMtr1 <- as.numeric(subSetDsn$Sub_metering_1)
 subMtr2 <- as.numeric(subSetDsn$Sub_metering_2)
 subMtr3 <- as.numeric(subSetDsn$Sub_metering_3)
